@@ -77,4 +77,27 @@ textarea:focus {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
-.wrapper-wrap{width:100%;display:flex;gap:10px;flex-wrap: wrap;}
+.wrapper-wrap {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.wrapper {
+  width: 150px;
+  height: 150px;
+  border: 3px dashed #f5f6fa;
+  padding: 10px;
+  border-radius: 40px;
+  display: grid;
+  place-content: center;
+}
+.wrapper img {
+  max-inline-size: 100%;
+  block-size: auto;
+  border-radius: 40px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+  border: 3px dotted #e84393;
+}

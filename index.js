@@ -9,7 +9,7 @@ const dic = {
     "A":"./imagini/LiteraA.webp",
     "a":"./imagini/LiteraA.webp",
     "B":"./imagini/LiteraB.webp",
-    "B":"./imagini/LiteraB.webp",
+    "b":"./imagini/LiteraB.webp",
     "C":"./imagini/LiteraC.webp",
     "c":"./imagini/LiteraC.webp",
     "D":"./imagini/LiteraD.webp",
