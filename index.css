@@ -101,3 +101,8 @@ textarea:focus {
   object-position: center;
   border: 3px dotted #e84393;
 }
+button:disabled {
+  background-color: rgb(95, 95, 87);
+  color: rgb(189, 181, 181);
+  transform: scale(0.9);
+}
