@@ -9,47 +9,48 @@
 }
 body {
   background-color: #b2bec3;
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh; 
   margin: 0;
   padding: 0;
   display: grid;
   place-content: center;
 }
 label {
+ 
   color: #2d3436;
   font-weight: 500;
-  font-size: clamp(0.5rem, calc(2vw + 0.5rem), 5rem);
+  font-size: clamp(1rem, calc(2vw + 1rem), 5rem);
 }
 .container {
-  width: 800px;
+  /* width: 800px; */
   display: flex;
   flex-direction: column;
+ 
   gap: 1em;
+
 }
-.btns {
-  display: flex;
-  justify-content: space-around;
-  padding: 2em;
-}
+.container *{ margin:0 auto;}
+.btns{padding-bottom: 1em;}
 .btns button {
-  background-color: #2d3436;
+  cursor: pointer;
+  background-color: #000000;
   color: #f9fafb;
   font-weight: 700;
-  font-size: 2rem;
-  width: max-content;
+  font-size: clamp(1rem, calc(2vw + 1rem), 5rem);
   box-shadow: 2px 2px 11px rgb(70, 68, 64);
-  padding: 0.97em 1.25em;
+  padding: 0.4em .5em;
   border-radius: 5px;
   border: none;
-  transition: background-color 0.265s ease-in, color 0.265s ease-out,
-    box-shadow 1s ease-out, transform 0.265s ease-in-out;
-  will-change: background-color, color, box-shadow, transform;
+  margin-bottom:5px;
+  transition: background-color 0.265s ease-in, box-shadow 1s ease-out,
+    transform 0.265s ease-in-out;
+  will-change: background-color, box-shadow, transform;
 }
+
 .btns button:hover,
 .btns button:focus {
-  background-color: #fab1a0;
-  color: #0984e3;
+  background-color: #316290;
+
   /* box-shadow: 0 8px 3px rgb(78, 75, 70); */
 }
 .btns button:focus {
@@ -63,11 +64,14 @@ textarea {
   background-color: whitesmoke;
   border-radius: 5px;
   font-weight: 400;
-  font-size: 3rem;
+  font-size: clamp(1.4rem, calc(2vw + 1.4rem), 5rem);
   outline: none;
   border: none;
   color: #3b82f6;
+  width:85%;
+  
 }
+
 textarea:focus {
   outline: 2px solid #a29bfe;
   outline-offset: 5px;
@@ -76,9 +80,10 @@ textarea:focus {
   opacity: 0.5;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
+  font-size:clamp(1rem, calc(2vw + 1rem), 5rem);
 }
 .wrapper-wrap {
-  width: 100%;
+  
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
@@ -101,8 +106,20 @@ textarea:focus {
   object-position: center;
   border: 3px dotted #e84393;
 }
-button:disabled {
+button:disabled,
+button:disabled:hover {
   background-color: rgb(95, 95, 87);
   color: rgb(189, 181, 181);
   transform: scale(0.9);
+  cursor: auto;
+}
+
+@media (max-width: 599px) {
+  .wrapper-wrap {
+    justify-content: center;
+  }
+  /* textarea,label{margin: 0  auto;} */
+}
+@media (min-width:600px){
+  
 }

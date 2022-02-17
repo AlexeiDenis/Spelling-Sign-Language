@@ -63,7 +63,7 @@ const dic = {
 btn2.addEventListener('click', () => { btn2.disabled = true;
   btn.disabled = false;
 input.value =""; 
-while(globalwrp.firstChild) globalwrp.removeChild(globalwrp.firstChild); },false);
+while(globalwrp.firstChild) globalwrp.removeChild(globalwrp.firstChild); });
 
 btn.addEventListener('click', () => {
  
@@ -81,4 +81,4 @@ btn.addEventListener('click', () => {
   }
   btn.disabled = true;
   btn2.disabled = false;
-}, false);
+});
