@@ -110,7 +110,7 @@ button:disabled,
 button:disabled:hover {
   background-color: rgb(95, 95, 87);
   color: rgb(189, 181, 181);
-  transform: scale(0.9);
+  
   cursor: auto;
 }
 
@@ -118,8 +118,5 @@ button:disabled:hover {
   .wrapper-wrap {
     justify-content: center;
   }
-  /* textarea,label{margin: 0  auto;} */
-}
-@media (min-width:600px){
-  
+ .btns{display:flex;flex-direction: column;}
 }
